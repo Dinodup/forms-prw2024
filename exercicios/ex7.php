@@ -7,14 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>O ano será:</h1>
+    <h1>Resultados</h1>
     <?php
-    $nome = $_POST["nome"];
+    $nomes = $_POST["nome"];
     $n1 = $_POST["n1"];
     $n2 = $_POST["n2"];
     $freq = $_POST["fre"];
 
-    echo "Nome do aluno: $nome<br>";
+    echo "Nome do aluno: $nomes<br>";
     echo "Nota 1 do aluno: $n1<br>";
     echo "Nota 2 do aluno: $n2<br>";
     echo "Frequência do aluno: $freq<br>";
@@ -23,22 +23,14 @@
     echo  "Média aritmética do aluno: $media<br>";
 
     if($media < 5){
-        echo "<red>Reprova por nota<red>";
+        echo "<br><span style='color:red;'>Reprova por nota</span>";
     }
     if($freq < 75){
-        echo "Reprova por frequência";
+        echo "<br><span style='color:red;'>Reprova por frequência</span>";
     }
     if($media > 5 and $freq > 75){
-        echo "Aprovado";
-    }
-
-
-    if($resto4 == 0 and $resto100 =! 0 or $resto400 == 0){
-        echo "É um ano bissexto";
-    }
-    else{
-        echo "Não é um ano bissexto";
-    }
+        echo "<br><span style='color:green;'>Aprovado</span>";
+    } 
     ?>
 </body>
 </html>
