@@ -8,13 +8,14 @@
 </head>
 <body>
     <?php
-    $thoras = $_POST[$ditancia/$velocidade];
-    $tcombustivel = $_POST[$distancia/$consumo];
+    $distancia = $_POST["distancia"];
+    $velocidade = $_POST["velocidade"];
+    $consumo = $_POST["consumo"];
+    $thoras = $distancia/$velocidade;
+    $tcombustivel = $distancia/$consumo;
 
-    echo "Total horas: ";
-    $thoras;
-    echo "Total combustivel: ";
-    $tcombustivel;
+    echo "\nTotal horas: ". $thoras;
+    echo "\nTotal combustivel: ".$tcombustivel;
     ?>
 </body>
 </html>
