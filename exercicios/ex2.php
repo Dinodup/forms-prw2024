@@ -8,14 +8,26 @@
 </head>
 <body>
     <?php
-    $distancia = $_POST["distancia"];
-    $velocidade = $_POST["velocidade"];
-    $consumo = $_POST["consumo"];
-    $thoras = $distancia/$velocidade;
-    $tcombustivel = $distancia/$consumo;
+    $n1 = $_POST["n1"];
+    $n2 = $_POST["n2"];
+    $operacao = $_POST["operacao"];
 
-    echo "\nTotal horas: ". $thoras;
-    echo "\nTotal combustivel: ".$tcombustivel;
+    if($soma = 1){
+        $soma = $n1 + $n2;
+        echo "Soma: ". $soma;
+    }
+    elseif($subt = 2){
+        $subt = $n1 - $n2;
+        echo "Subtração: ". $subt;
+    }
+    elseif($div = 3){
+        $div = $n1/$n2;
+        echo "Divisão: ". $div;
+    }
+    elseif($mult = 4){
+        $mult = $n1 * $n2;
+        echo "Multiplicação: ". $mult;
+    }
     ?>
 </body>
 </html>
