@@ -12,10 +12,10 @@
     $t1 = $_POST["texto1"];
     $t2 = $_POST["texto2"];
 
-    echo "Comprimento: ".$t1;
-    echo "Largura: ".$t2;
+    echo "Comprimento: $t1 metros<br>";
+    echo "Largura: $t2 metros<br>";
     $a = $t1 * $t2;
-    echo "Área: ".$a;
+    echo "Área: $a metros<br>";
     ?>
 </body>
 </html>
