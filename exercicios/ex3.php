@@ -8,40 +8,42 @@
 </head>
 <body>
     <?php
-    $t = $_POST[$texto];
-    $ro = $_POST[$rola];
-    $check = $_POST[$check1];
-    $check = $_POST[$check2];
-    $ra = $_POST[$operacao];
-    $op = $_POST[$comida];
+    $valort = $_POST["texto"];
+    $valorc = $_POST["checkbox"];
+    $valoro = $_POST["operacao"];
+    $valors = $_POST["comida"];
 
-    echo "Seu nome: ".$t;
+    echo "Seu nome: ".$valort."<br>";
     
-    if($check == $check1){
-        echo "Você prefere Carne";
+    if($valorc == 1 or $valorc == 2){
+        echo "Você prefere ambos<br>";
     }
-    if($check == $check2){
-        echo "Você prefere Vegetal";
+    if($valorc == 1){
+        echo "Você prefere Carne<br>";
+    }
+    if($valorc == 2){
+        echo "Você prefere Vegetal<br>";
+    }
+    
+
+    if($valoro == 1){
+        echo "Você compraria Faca<br>";
+    }
+    if($valoro == 2){
+        echo "Você compraria panela<br>";
+    }
+    if($valoro == 3){
+        echo "Você compraria Tigela<br>";
     }
 
-    if($ra == $fac){
-        echo "Você compraria Faca: ";
+    if($valors == 1){
+        echo "Você escolhe como melhor comida Abacaxi<br>";
     }
-    if($ra == $pan){
-        echo "Você compraria panela: ";
+    if($valors == 2){
+        echo "Você escolhe como melhor comida Paçoca<br>";
     }
-    if($ra == $tig){
-        echo "Você compraria Tigela: ";
-    }
-
-    if($comida == $aba){
-        echo "Você compraria Tigela: ";
-    }
-    if($comida == $paco){
-        echo "Você compraria Tigela: ";
-    }
-    if($comida == $baco){
-        echo "Você compraria Tigela: ";
+    if($valors == 3){
+        echo "Você escolhe como melhor comida Bacon<br>";
     }
     ?>
 </body>
