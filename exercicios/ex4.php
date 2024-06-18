@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>A capital do seu estado escolhido é:</h1>
     <?php
     $texto = $_POST["texto"];
 

@@ -10,21 +10,21 @@
     <?php
     $n1 = $_POST["n1"];
     $n2 = $_POST["n2"];
-    $operacao = $_POST["operacao"];
+    $valor = $_POST["operacao"];
 
-    if($operacao == $soma){
+    if($valor == 1){
         $soma = $n1 + $n2;
         echo "Soma: ". $soma;
     }
-    elseif($operacao == $subt){
+    elseif($valor == 2){
         $subt = $n1 - $n2;
         echo "Subtração: ". $subt;
     }
-    elseif($operacao == $div){
+    elseif($valor == 3){
         $div = $n1/$n2;
         echo "Divisão: ". $div;
     }
-    elseif($operacao == $mult){
+    elseif($valor == 4){
         $mult = $n1 * $n2;
         echo "Multiplicação: ". $mult;
     }

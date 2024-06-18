@@ -8,12 +8,12 @@
 </head>
 <body>
     <?php
-    $t = $_POST["texto"];
-    $ro = $_POST["rola"];
-    $check = $_POST["check1"];
-    $check = $_POST["check2"];
-    $ra = $_POST["operacao"];
-    $op = $_POST["comida"];
+    $t = $_POST[$texto];
+    $ro = $_POST[$rola];
+    $check = $_POST[$check1];
+    $check = $_POST[$check2];
+    $ra = $_POST[$operacao];
+    $op = $_POST[$comida];
 
     echo "Seu nome: ".$t;
     
@@ -34,13 +34,13 @@
         echo "Você compraria Tigela: ";
     }
 
-    if($op == $aba){
+    if($comida == $aba){
         echo "Você compraria Tigela: ";
     }
-    if($op == $paco){
+    if($comida == $paco){
         echo "Você compraria Tigela: ";
     }
-    if($op == $baco){
+    if($comida == $baco){
         echo "Você compraria Tigela: ";
     }
     ?>
