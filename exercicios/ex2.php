@@ -12,19 +12,19 @@
     $n2 = $_POST["n2"];
     $operacao = $_POST["operacao"];
 
-    if($soma = 1){
+    if($operacao == $soma){
         $soma = $n1 + $n2;
         echo "Soma: ". $soma;
     }
-    elseif($subt = 2){
+    elseif($operacao == $subt){
         $subt = $n1 - $n2;
         echo "Subtração: ". $subt;
     }
-    elseif($div = 3){
+    elseif($operacao == $div){
         $div = $n1/$n2;
         echo "Divisão: ". $div;
     }
-    elseif($mult = 4){
+    elseif($operacao == $mult){
         $mult = $n1 * $n2;
         echo "Multiplicação: ". $mult;
     }

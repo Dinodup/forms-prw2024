@@ -9,27 +9,49 @@
 <body>
     <h1>Forms massas</h1>
     <form id="forms" action="ex3.php" method="post">
-        <div id="n1">
-            <label for="soma">Texto </label>
-            <input type="radio" name="soma" id="soma">
+        <div id="t"><!--Text-->
+            <label for="texto">Seu nome: </label>
+            <input type="text" name="texto" id="texto">
+        </div><p></p>
 
-            <label for="subt">Subtrair </label>
-            <input type="radio" name="subt" id="subt">
+        <div id="ro"><!--Text Area-->
+            <textarea name="rola" id="rola">
+            Esteja informado que nesse forms,
+            tudo será comentado sobre comida:
+            </textarea>
+        </div>
 
-            <label for="div">Dividir </label>
-            <input type="radio" name="div" id="div">
+        <div id="c"><!--Check box-->
+            <h2>O que você prefere?</h2>
+            <label for="check">Carne </label>
+            <input type="checkbox" name="check" id="check1">
+            <label for="check">Vegetal </label>
+            <input type="checkbox" name="check" id="check2">
+        </div><p></p>
 
-            <label for="mult">Multiplicar </label>
-            <input type="radio" name="mult" id="mult">
+        <div id="ra"><!--Radio-->
+            <h2>Qual desses você compraria para fins alimentícios?</h2>
+            <label for="operacao">Faca </label>
+            <input type="radio" name="operacao" id="operacao" value="fac">
+
+            <label for="operacao">Panela </label>
+            <input type="radio" name="operacao" id="operacao" value="pan">
+
+            <label for="operacao">Tigela </label>
+            <input type="radio" name="operacao" id="operacao" value="tig">
+
+        </div><p></p>
+
+        <div id="op"><!--Select e Option-->
+            <label for="comida">Escolha a melhor comida:</label>
+            <select name="comida" id="comida">
+	            <option value="">Escolha</option>
+	            <option value="aba">Abacaxi</option>
+	            <option value="paco">Paçoca</option>
+	            <option value="baco">Bacon</option>
+            </select>
         </div>
-        <div id="n1">
-            <label for="n1">Numero 1: </label>
-            <input type="number" name="n1" id="n1">
-        </div>
-        <div id="n1">
-            <label for="n2">Numero 2: </label>
-            <input type="number" name="n2" id="n2">
-        </div>
+
         <div>
             <button type="submit">Enviar</button>
         </div>
