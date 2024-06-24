@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Estudante</title>
+</head>
+<body>
+    <h1>Cadastro de Estudante</h1>
+    <form id="forms" action="ex12.php" method="post">
+        <div>
+            <label for="prontuario">Prontuário:</label>
+            <input type="text" name="prontuario" id="prontuario" required>
+        </div>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" min="15" max="75" required>
+        </div>
+        <div>
+            <label for="periodo">Período (V - Vespertino, N - Noturno):</label>
+            <input type="text" name="periodo" id="periodo" pattern="[VN]" title="Use V para Vespertino ou N para Noturno" required>
+        </div>
+        <div>
+            <label for="modulo">Módulo (1 a 4):</label>
+            <input type="number" name="modulo" id="modulo" min="1" max="4" required>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>

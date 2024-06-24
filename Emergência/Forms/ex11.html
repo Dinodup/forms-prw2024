@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Venda de Camisetas</title>
+</head>
+<body>
+    <h1>Venda de Camisetas</h1>
+    <form id="forms" action="ex11.php" method="post">
+        <div>
+            <label for="small">Quantidade de camisetas pequenas (R$ 10,00):</label>
+            <input type="number" name="small" id="small" min="0" required>
+        </div>
+        <div>
+            <label for="medium">Quantidade de camisetas médias (R$ 12,00):</label>
+            <input type="number" name="medium" id="medium" min="0" required>
+        </div>
+        <div>
+            <label for="large">Quantidade de camisetas grandes (R$ 15,00):</label>
+            <input type="number" name="large" id="large" min="0" required>
+        </div>
+        <div>
+            <button type="submit">Calcular</button>
+        </div>
+    </form>
+</body>
+</html>

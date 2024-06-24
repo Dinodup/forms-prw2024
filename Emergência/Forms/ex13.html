@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Imagens</title>
+</head>
+<body>
+    <h1>Visualizador de Imagens</h1>
+    <form id="forms" action="ex13.php" method="post">
+        <div>
+            <label for="folder">Nome da pasta dentro de htdocs:</label>
+            <input type="text" name="folder" id="folder" required>
+        </div>
+        <div>
+            <label for="image_count">Número de imagens:</label>
+            <input type="number" name="image_count" id="image_count" min="1" required>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
