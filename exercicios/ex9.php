@@ -11,12 +11,11 @@
     <?php
     $valors = $_POST["nums"];
 
-    for($i=0; $i < 10; $i++){
-
+    echo "Tabuada do ".$valors."<br>";
+    for($i=0; $i <= 10; $i++){
+        $conta = $valors*$i;
+        echo $valors." x ".$i." = ".$conta."<br>";
     }
-    
-    $ddd = $idades * 365;
-    echo "A pessoa completou com essa idade: ".$ddd." dias de vida<br>";
     ?>
 </body>
 </html>
