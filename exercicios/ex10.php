@@ -15,13 +15,13 @@
     echo "Saudações caro(a) $n<br>";
 
     if($tempo < 12){
-        echo "Bom dia<br>";
+        echo "Dando bom dia a voce no horário $tempo<br>";
     }
     elseif($tempo < 18){
-        echo "Boa tarde<br>";
+        echo "Dando boa tarde a voce no horário $tempo<br>";
     }
     elseif($tempo > 18){
-        echo "Boa noite<br>";
+        echo "Boa noite a voce no horário $tempo<br>";
     }
     ?>
 </body>
