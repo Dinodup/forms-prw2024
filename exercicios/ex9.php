@@ -11,7 +11,9 @@
     <?php
     $valors = $_POST["nums"];
 
-    for($i=0; )
+    for($i=0; $i < 10; $i++){
+
+    }
     
     $ddd = $idades * 365;
     echo "A pessoa completou com essa idade: ".$ddd." dias de vida<br>";
